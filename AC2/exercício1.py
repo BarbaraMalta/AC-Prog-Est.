@@ -9,17 +9,17 @@ print("Ola professor, meu nome e Barbara.")
 
 def resolucao_do_delta(a, b, c):
     delta = b**2 - 4*a*c
-    return print(delta)
-resolucao_do_delta(1, -4, 3)
+    return delta
+print(resolucao_do_delta(1, -4, 3))
 def resolucao_das_raizes(a, b, delta):
     raiz1 = (-b + delta ** 0.5) / (2 * a)
     raiz2 = (-b - delta ** 0.5) / (2 * a) 
-    return print(raiz1, "<----->", raiz2)
-resolucao_das_raizes(1, -4, 4)
+    return raiz1, "<----->", raiz2
+print(resolucao_das_raizes(1, -4, 4))
 
 print("-" * 50)
 
 def anos_bissextos(ano):
     bissexto = (ano % 4 == 0 and (not(ano % 100 == 0) or ano % 400 == 0))
-    return print(bissexto)
-anos_bissextos(1858)
+    return bissexto
+print(anos_bissextos(1858))
