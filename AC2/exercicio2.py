@@ -11,5 +11,5 @@ def calcula_salario(valor_hora, num_horas, irpf = 0.275):
     salario_bruto = valor_hora * num_horas
     desconto_imposto = salario_bruto * irpf
     salario_liquido = salario_bruto - desconto_imposto
-    return print(round(salario_liquido, 2))
-calcula_salario(20, 220)
+    return round(salario_liquido, 2)
+print(calcula_salario(20, 220))
